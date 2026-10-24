@@ -292,7 +292,10 @@ function escp_shortcode_button( $atts, $content = null ) {
 /*-------------------------------------------*/
 
 /**
- * CSS と jQuery を読み込む。ハンドル名は元と同じ。
+ * CSS と jQuery・jQuery Masonry を読み込む。ハンドル名は元と同じ。
+ *
+ * jQuery Masonry は WordPress 本体に付いているもの。この3つのショートコードでは使わないが、元は全ページで読み込んでいた
+ * （public/class-public.php の enqueue_scripts()）。テーマや他のプラグインが当てにしている場合に結果を変えないため、残す。
  *
  * @return void
  */
@@ -302,6 +305,7 @@ function escp_enqueue_scripts() {
 	}
 
 	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'jquery-masonry' );
 }
 
 /**

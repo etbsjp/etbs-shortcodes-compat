@@ -15,6 +15,7 @@
 | 上の3つに当たる CSS | ほかのショートコード用の CSS |
 | Font Awesome 4.7.0 の CSS と fonts | 管理画面（設定画面・エディタのボタン・ウィジェット） |
 | `body` の class `wc-shortcodes-font-awesome-enabled` | 投稿タイプ・AJAX・共有ボタン |
+| 全ページでの jQuery・jQuery Masonry（WordPress 本体のもの）の読み込み | `rsvp.js` |
 
 CSS と Font Awesome の読み込みは、元のプラグインと同じオプション（`wc_shortcodes_enable_shortcode_css`・`wc_shortcodes_enable_font_awesome`）に従います。
 このプラグインに設定画面はありません。
