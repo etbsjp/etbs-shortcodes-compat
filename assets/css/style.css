@@ -1,0 +1,242 @@
+.wc-shortcodes-clearfix:before,
+.wc-shortcodes-clearfix:after {
+    content: "";
+    display: table;
+}
+
+.wc-shortcodes-clearfix:after {
+    clear: both;
+}
+
+.wc-shortcodes-clearfix {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+
+/**
+ * [wc_row]
+ * ----------------------------------------------------------------------------
+ */
+.wc-shortcodes-row {
+	display: block;
+	width: 100%;
+}
+
+
+/**
+ * [wc_column]
+ * ----------------------------------------------------------------------------
+ */
+.wc-shortcodes-one-half { width: 48% }
+.wc-shortcodes-one-third { width: 30.66% }
+.wc-shortcodes-two-third { width: 65.33% }
+.wc-shortcodes-one-fourth { width: 22% }
+.wc-shortcodes-three-fourth { width: 74% }
+.wc-shortcodes-one-fifth { width: 16.8% }
+.wc-shortcodes-two-fifth { width: 37.6% }
+.wc-shortcodes-three-fifth { width: 58.4% }
+.wc-shortcodes-four-fifth { width: 67.2% }
+.wc-shortcodes-one-sixth { width: 13.33% }
+.wc-shortcodes-five-sixth { width: 82.67% }
+
+.wc-shortcodes-one-half,
+.wc-shortcodes-one-third,
+.wc-shortcodes-two-third,
+.wc-shortcodes-three-fourth,
+.wc-shortcodes-one-fourth,
+.wc-shortcodes-one-fifth,
+.wc-shortcodes-two-fifth,
+.wc-shortcodes-three-fifth,
+.wc-shortcodes-four-fifth,
+.wc-shortcodes-one-sixth,
+.wc-shortcodes-five-sixth {
+	position: relative;
+	margin-left: 4%;
+	margin-bottom: 0;
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.wc-shortcodes-column-first {
+	margin-left: 0!important;
+	clear: left;
+}
+
+@media (max-width: 480px) {
+	body .wc-shortcodes-one-half,
+	body .wc-shortcodes-one-third,
+	body .wc-shortcodes-two-third,
+	body .wc-shortcodes-three-fourth,
+	body .wc-shortcodes-one-fourth,
+	body .wc-shortcodes-one-fifth,
+	body .wc-shortcodes-two-fifth,
+	body .wc-shortcodes-three-fifth,
+	body .wc-shortcodes-four-fifth,
+	body .wc-shortcodes-one-sixth,
+	body .wc-shortcodes-five-sixth {
+		width: 100%;
+		float: none;
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+}
+
+
+/**
+ * [wc_button]
+ * ----------------------------------------------------------------------------
+ */
+.wc-shortcodes-button {
+	line-height: 1.3;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+.wc-shortcodes-button:visited,
+.wc-shortcodes-button {
+	border: none;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #428bca;
+	border: 1px solid #357ebd;
+	display: inline-block;
+	padding: 6px 20px;
+}
+
+.wc-shortcodes-button:hover {
+	color: #ffffff;
+	background-color: #3276b1;
+	border-color: #285e8e;
+	text-decoration: none;
+	outline: none;
+}
+
+.wc-shortcodes-button:active {}
+
+.wc-shortcodes-button-left {
+	text-align: left;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+.wc-shortcodes-button-center {
+	text-align: center;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+.wc-shortcodes-button-center .wc-shortcodes-button {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.wc-shortcodes-button-right {
+	text-align: right;
+}
+.wc-shortcodes-button-right .wc-shortcodes-button {
+	margin-right: 0px;
+	margin-left: 10px;
+}
+
+.wc-shortcodes-button-icon-left {
+	margin-right: 0.5em;
+}
+.wc-shortcodes-button-icon-right {
+	margin-left: 0.5em;
+}
+
+/* Secondary */
+.wc-shortcodes-button.wc-shortcodes-button-secondary:visited,
+.wc-shortcodes-button.wc-shortcodes-button-secondary {
+	color: #333333;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+}
+
+.wc-shortcodes-button.wc-shortcodes-button-secondary:hover {
+	color: #333333;
+	background-color: #ebebeb;
+	border-color: #adadad;
+}
+
+/* Inverse */
+.wc-shortcodes-button.wc-shortcodes-button-inverse:visited,
+.wc-shortcodes-button.wc-shortcodes-button-inverse {
+	color: #357ebd;
+	background-color: #e4ecf3;
+	border: 1px solid #428bca;
+}
+
+.wc-shortcodes-button.wc-shortcodes-button-inverse:hover {
+	color: #ffffff;
+	background-color: #428bca;
+	border-color: #357ebd;
+}
+
+/* Success */
+.wc-shortcodes-button.wc-shortcodes-button-success:visited,
+.wc-shortcodes-button.wc-shortcodes-button-success {
+	color: #ffffff;
+	background-color: #5cb85c;
+	border: 1px solid #4cae4c;
+}
+
+.wc-shortcodes-button.wc-shortcodes-button-success:hover {
+	color: #ffffff;
+	background-color: #47a447;
+	border-color: #398439;
+}
+
+/* Warning */
+.wc-shortcodes-button.wc-shortcodes-button-warning:visited,
+.wc-shortcodes-button.wc-shortcodes-button-warning {
+	color: #ffffff;
+	background-color: #f0ad4e;
+	border: 1px solid #eea236;
+}
+
+.wc-shortcodes-button.wc-shortcodes-button-warning:hover {
+	color: #ffffff;
+	background-color: #ed9c28;
+	border-color: #d58512;
+}
+
+/* Danger */
+.wc-shortcodes-button.wc-shortcodes-button-danger:visited,
+.wc-shortcodes-button.wc-shortcodes-button-danger {
+	color: #ffffff;
+	background-color: #d9534f;
+	border: 1px solid #d43f3a;
+}
+
+.wc-shortcodes-button.wc-shortcodes-button-danger:hover {
+	color: #ffffff;
+	background-color: #d2322d;
+	border-color: #ac2925;
+}
+
+/* Info */
+.wc-shortcodes-button.wc-shortcodes-button-info:visited,
+.wc-shortcodes-button.wc-shortcodes-button-info {
+	color: #ffffff;
+	background-color: #5bc0de;
+	border: 1px solid #46b8da;
+}
+
+.wc-shortcodes-button.wc-shortcodes-button-info:hover {
+	color: #ffffff;
+	background-color: #39b3d7;
+	border-color: #269abc;
+}
+
+
+.wc-shortcodes-entry-summary > *:first-child,
+.wc-shortcodes-content > *:first-child {
+	margin-top: 0 !important;
+}
+.wc-shortcodes-entry-summary > *:last-child,
+.wc-shortcodes-content > *:last-child {
+	margin-bottom: 0 !important;
+}
+.wc-shortcodes-item {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
