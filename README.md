@@ -34,7 +34,7 @@ CSS と Font Awesome の読み込みは、元のプラグインと同じオプ�
 
 ### 1.0.0
 
-- 初版。`[wc_row]`・`[wc_column]`・`[wc_button]` を、wc-shortcodes 3.46 と同じ出力で引き継ぎ。
+- [ 機能追加 ] `[wc_row]`・`[wc_column]`・`[wc_button]` を、Shortcodes by Angie Makes 3.46 と同じ出力で引き継ぐ初版を追加
 
 ## サポート
 
